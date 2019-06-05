@@ -1,0 +1,19 @@
+{
+  "name": "splitter",
+  "version": "1.0.0",
+  "description": "Splitter is a new type of group focused expense splitter and money transferring application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SplittApp/Splitter-Node-React.git"
+  },
+  "author": "Omar Jandali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SplittApp/Splitter-Node-React/issues"
+  },
+  "homepage": "https://github.com/SplittApp/Splitter-Node-React#readme"
+}
