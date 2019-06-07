@@ -1,4 +1,5 @@
 const app = require('./www/bin/app.js');
+const database = require('../database/index');
 require('dotenv').config()
 
 const port = 1122
