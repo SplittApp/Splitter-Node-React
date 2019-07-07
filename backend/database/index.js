@@ -1,19 +1,21 @@
 const seq = require('sequelize');
 const postgres = require('pg');
 
-const db = new seq(
+const connectionPostgres = new seq(
   'splitter',
-  'masteradmin',
-  'masterAdmin',
+  'splitter',
+  'masterpass',
   {
     host:'localhost',
     dialect:'postgres'
   }
-)
+);
 
-db.authenticate()
+connectionPostgres.authenticate()
   .then(() => {
     console.log(`The database Splitter has been connected`)
   }).catch((err) => {
     throw err;
-  })
+  });
+
+module.exports.postgres = connectionPostgres;
