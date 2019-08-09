@@ -49,7 +49,6 @@ const group = postgres.define(
             notNull: true,
             validate: {
                 notNull: true,
-                isIn: [['true', 'false']]
             }
         }
     }

@@ -1,6 +1,6 @@
 const seq = require('sequelize');
 const { postgres } = require('../../index');
-const { user } = require('./User')
+const { user } = require('./User');
 
 const friend = postgres.define(
   "friend",
@@ -33,7 +33,7 @@ postgres.sync()
     console.log("caught error with friend:  " + error)
   })
 
-friend.belongsTo(user, {as: 'requested'})
-friend.belongsTo(user, {as: 'accepted'})
+friend.belongsTo(user, {as: 'requested'});
+friend.belongsTo(user, {as: 'accepted'});
 
 module.exports.friend = friend;

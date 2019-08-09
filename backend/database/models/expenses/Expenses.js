@@ -25,7 +25,6 @@ const expense = postgres.define(
             require: true,
             validate: {
                 notNull: true,
-                // isIn: [['true', 'false']]
             }
         },
         amount: {

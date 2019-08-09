@@ -34,7 +34,6 @@ const member = postgres.define(
             null: ture,
             validate: {
                 notNull: true,
-                isIn: [['true', 'false']]
             }
         },
         active: {
@@ -42,7 +41,6 @@ const member = postgres.define(
             null: ture,
             validate: {
                 notNull: true,
-                isIn: [['true', 'false']]
             }
         },
         reference: {
