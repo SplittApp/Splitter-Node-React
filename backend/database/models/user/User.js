@@ -1,5 +1,6 @@
 const seq = require('sequelize');
 const { postgres } = require('../../index');
+const { group } = require('../group/Group');
 
 const user = postgres.define(
   "user",
@@ -62,12 +63,15 @@ const user = postgres.define(
     updatedAt:  seq.DATE,
   },
 );
+
 postgres.sync()
   .then(() => {
     console.log("friend table is synced")
   })
   .catch((error) => {
     console.log("caught error with friend:  " + error)
-  })
+  });
+
+user.hasMany(group);
 
 module.exports.user = user;
